@@ -1,0 +1,11 @@
+{
+  "name": "netlife_scaffolder",
+  "version": "0.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
