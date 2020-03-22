@@ -1,4 +1,15 @@
 
+# TASK TO DO
+[todo list](TODO.md)
+
+[Link to documantation](#)
+
+# Instructions
+The projects inside the scaffolder folder are selfcontaining, meaning you can run them up seperatly and make improvements
+
+If you do improvemens remember to bump the version number
+
+
 
 
 # Overview
