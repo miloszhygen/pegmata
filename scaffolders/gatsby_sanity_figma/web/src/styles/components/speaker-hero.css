@@ -1,0 +1,60 @@
+.speaker-container {
+  display: grid;
+  grid-template-columns: repeat(4, [col] auto);
+  grid-template-rows: repeat(4, [row] auto);
+  grid-column-gap: 1em;
+  /*grid-row-gap: 15px; */
+  /* FIX THIS LATER */
+  margin-bottom: 100px;
+}
+.speaker-image {
+  grid-column: col 1 / span 2;
+  grid-row: row 1 / span 4;
+}
+
+.speaker-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.speaker-title {
+  grid-column: col 2;
+  grid-row: row 2;
+  background: theme("colors.black");
+  color: theme("colors.green.default");
+  z-index: 1;
+}
+
+.speaker-time {
+  grid-column: col 3;
+  grid-row: row 3;
+  background-color: theme("colors.green.default");
+  z-index: 1;
+}
+
+.speaker-list {
+  display: flex;
+  align-items: center;
+}
+
+.speaker-list img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.fit-content {
+  max-width: fit-content;
+}
+
+@media screen and (max-width: 44rem) {
+  .fit-content {
+    max-width: max-content;
+  }
+}
+
+.speaker img {
+  filter: grayscale(100%);
+}

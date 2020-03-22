@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpeakerHero renders correctly 1`] = `
+<div
+  className=" flex content-center flex-col relative min-h-64 "
+/>
+`;

@@ -1,0 +1,102 @@
+.delay-transition {
+  transition: z-index 4s cubic-bezier(1, 0, 1, 0) both;
+}
+.intro1 {
+  animation: intro1 0.5s cubic-bezier(0.19, 1, 0.22, 1) both;
+  animation-delay: 0.3s;
+}
+.intro2 {
+  animation: intro2 0.5s cubic-bezier(0.19, 1, 0.22, 1) both;
+  animation-delay: 0.4s;
+}
+.intro3 {
+  animation: intro3 0.5s cubic-bezier(0.19, 1, 0.22, 1) both;
+  animation-delay: 0.5s;
+}
+.intro4 {
+  animation: intro4 0.5s cubic-bezier(0.19, 1, 0.22, 1) both;
+  animation-delay: 0.6s;
+}
+.intro5 {
+  animation: intro5 0.5s cubic-bezier(0.19, 1, 0.22, 1) both;
+  animation-delay: 0.7s;
+}
+.slow-fade-in {
+  animation: slowFadeIn 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+  animation-delay: 1.75s;
+}
+
+.title-load {
+  animation: introtitle 0.5s cubic-bezier(0.19, 1, 0.22, 1) both;
+  animation-delay: 0.2s;
+}
+
+@keyframes intro1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(200px) rotate(-15deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.25) translateY(0px) rotate(0deg);
+  }
+}
+@keyframes intro2 {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(175px) rotate(35deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.25) translateY(0px) rotate(-3deg);
+  }
+}
+@keyframes intro3 {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(120px) rotate(-5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.25) translateY(0px) rotate(3deg);
+  }
+}
+@keyframes intro4 {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(100px) rotate(-35deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.25) translateY(0px) rotate(-2deg);
+  }
+}
+@keyframes intro5 {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(70px) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.25) translateY(0px) rotate(4deg);
+  }
+}
+@keyframes introtitle {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateX(-500px) translateY(-70px) rotate(-50deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes slowFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
