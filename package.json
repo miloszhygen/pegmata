@@ -4,7 +4,8 @@
   "description": "",
   "main": "build.js",
   "scripts": {
-    "test": "test"
+    "test": "jest",
+    "scaffold": "node scripts/build.js"
   },
   "author": "",
   "license": "ISC"
