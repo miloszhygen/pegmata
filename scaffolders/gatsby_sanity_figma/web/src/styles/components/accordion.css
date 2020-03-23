@@ -1,7 +1,0 @@
-.turn-around {
-  will-change: transform;
-  transition: all 0.4s ease;
-}
-.open .turn-around {
-  transform: rotate(-180deg);
-}

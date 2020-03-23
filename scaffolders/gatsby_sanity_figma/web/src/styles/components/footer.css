@@ -1,9 +1,0 @@
-footer a {
-  border-bottom: 2px solid black;
-}
-
-/* Hack to reduce margins on rich-text p in footer */
-footer p {
-  margin-bottom: 6px !important;
-  margin-top: 6px !important;
-}

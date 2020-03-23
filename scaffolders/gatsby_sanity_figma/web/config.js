@@ -5,7 +5,7 @@ console.info(`Setting env to --> ${inProduction ? "PRODUCTION" : "DEVELOP"} `)
 
 module.exports = {
   sanity: {
-    projectId: "",
+    projectId: "hnz7n8t7",
     dataset: inProduction ? "production" : "develop",
     // a token with read permissions is required
     // if you have a private dataset
