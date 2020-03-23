@@ -4,11 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-console.info(`
-  ******************
-  process.env.GATSBY_NODE_ENV': ${process.env.GATSBY_NODE_ENV || "Not found"}
-  ******************
-`)
 
 const config = require('./config');
 
@@ -63,7 +58,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "GTM-MRK3MJ",
+        id: "",
 
         // Include GTM in development.
         // Defaults to false meaning GTM will only be loaded in production.

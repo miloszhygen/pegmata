@@ -3,7 +3,7 @@ import config from './config';
 const inProduction = process.env.GATSBY_NODE_ENV === "production"
 const testConfig = {
   sanity: {
-    projectId: "hnz7n8t7",
+    projectId: "",
     dataset: inProduction ? "production" : "develop",
     watchMode: true,
   }

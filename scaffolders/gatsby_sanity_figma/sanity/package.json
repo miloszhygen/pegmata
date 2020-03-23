@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Milosz Hygen <miloszhygen@gmail.com>",
+  "author": "",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
