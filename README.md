@@ -24,5 +24,17 @@ If you do improvemens remember to bump the version number
       - storybook
       - components <- IMPORTANT
   - npm script that runs selected scaffolder
+    - set up project structure
+    - copy web files
+    - initiate sanity init
+    - update sanity files
+    - populate sanity with basic content
+      - site setings
+        - title
+      - articles schema + with an article or two?
+        - title
+        - slug
+        - content - richtext
+
   - tests
   - docs for github pages

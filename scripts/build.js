@@ -19,3 +19,26 @@ console.log('Well, well, mister!');
   - run selected scaffolder
 
 */
+
+
+
+
+
+/*
+
+  SANITY
+
+  # INIT
+  // Install our command line tools
+  npm install @sanity/cli -g
+
+  // Create your Sanity project root directory
+  mkdir projects && cd projects
+
+  // Create a new Sanity project
+  sanity init
+
+  // Read the documentation https://www.sanity.io/docs
+
+  # Update content
+*/

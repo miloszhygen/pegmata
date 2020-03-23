@@ -1,0 +1,8 @@
+# Mac files
+.DS_Store
+
+# Dependency directories
+/node_modules
+
+# editor spesific files
+.idea
