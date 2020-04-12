@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "scriptTest"
+    "name": "MiloszTester"
   },
   "api": {
-    "projectId": "",
+    "projectId": "0f216un9",
     "dataset": "production"
   },
   "plugins": [
@@ -16,18 +16,22 @@
   ],
   "env": {
     "development": {
-      "api": {
-        "dataset": "development"
-      },
       "plugins": [
         "@sanity/vision"
-      ]
+      ],
+      "api": {
+        "dataset": "develop"
+      }
     }
   },
   "parts": [
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema.js"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.js"
     }
   ]
 }
