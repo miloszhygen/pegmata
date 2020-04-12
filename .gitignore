@@ -7,3 +7,5 @@
 # editor spesific files
 .idea
 .vscode
+node_modules
+/TEST
