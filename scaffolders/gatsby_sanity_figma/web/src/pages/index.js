@@ -4,21 +4,34 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout/Layout"
 
 export default ({ data }) => {
-  const { _rawContent } = data.sanityPages
-
+  const { pages } = data;
   return (
     <Layout>
-      content here!
+      Content here!
+      <br/>
+      <br/>
+      Pages:
+      {pages.edges.map(({node},i) => {
+        const { path } = node;
+          return (
+            <div key={`${i + 1}_links`}>
+              <a className="no-underline hover:underline text-blue-500" href={path}>{path}</a>
+            </div>
+          )}
+        )}
     </Layout>
   )
 }
 
 export const query = graphql`
   query {
-    sanityPages(slug: { current: { eq: "index" } }) {
-      id
-      pageTitle
-      _rawContent(resolveReferences: { maxDepth: 5 })
+    pages: allSitePage {
+      edges {
+        node {
+          path
+          id
+        }
+      }
     }
   }
 `

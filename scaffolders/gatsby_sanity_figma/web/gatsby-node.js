@@ -40,5 +40,5 @@ async function createArticlesPage(graphql, actions, reporter) {
 
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  // await createArticlesPage(graphql, actions, reporter);
+  await createArticlesPage(graphql, actions, reporter);
 };
