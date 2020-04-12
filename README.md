@@ -38,3 +38,10 @@ If you do improvemens remember to bump the version number
 
   - tests
   - docs for github pages
+
+
+  # What does the gatsby project contain
+  - tests -> Jest
+    - how to run
+  - eslint
+  -
