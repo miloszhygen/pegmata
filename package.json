@@ -8,5 +8,10 @@
     "scaffold": "node scripts/build.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "react-icons": "^3.9.0",
+    "shelljs": "^0.8.3"
+  }
 }
