@@ -1,0 +1,76 @@
+@import "../../scss/1_tools/variables";
+
+// Removes spacing aroung the heading, sets default weight to bold
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: $cl-dark-n-stormy;
+  margin: 0;
+  line-height: 1.25;
+  hyphens: auto;
+}
+
+// Heading sizes
+// font weights arent working as I only have 1 font type for the font
+h1,
+.h1 {
+  font-size: $extra-large-text;
+  font-weight: 600;
+}
+h2,
+.h2 {
+  font-size: $large-text;
+  font-weight: 400;
+}
+h3,
+.h3 {
+  font-size: $medium-text;
+  font-weight: 600;
+}
+h4,
+.h4 {
+  font-size: $medium-text;
+}
+h5,
+.h5 {
+  font-size: $small-text;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+// Heading weights
+.h0, // 'h0' is only used to reset styles on dynamic headings we don't know the type of
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  &--light {
+    font-weight: lighter;
+  }
+  &--normal {
+    font-weight: normal;
+  }
+  &--bold {
+    font-weight: bold;
+  }
+  &--primary-color {
+    color: $clv-primary;
+  }
+  &--secondary-color {
+    color: $clv-secondary;
+  }
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

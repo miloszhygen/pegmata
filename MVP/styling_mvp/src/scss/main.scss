@@ -1,0 +1,24 @@
+@import '1_tools/functions';
+@import '1_tools/variables';
+@import '2_base/fonts';
+
+html {
+  height: 100%;
+  font-size: $base-font-size;
+}
+
+// -------------------------------------------------------------------------- //
+// If we ever need to namespace styles (wrap it all in a class on the
+//  'html' tag, for instance), do it from this point on
+// -------------------------------------------------------------------------- //
+
+// Normalize browser defaults, the tilde tells react its from a node module
+@import '~modern-normalize/modern-normalize.css';
+
+@import '1_tools/helpers';
+@import '1_tools/bootstrap-grid-settings';
+
+@import '2_base/body';
+@import '2_base/typography';
+
+@import '../components/Header/header';

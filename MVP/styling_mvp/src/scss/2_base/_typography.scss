@@ -1,0 +1,62 @@
+@import './fonts';
+@import "../1_tools/variables";
+
+// Global defaults
+body {
+  color: $clv-primary-text-color;
+  line-height: $base-line-height;
+  font-family: YoungSerif, serif;
+  font-size: $base-font-size;
+  // Font smoothing
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// Basic elements
+strong,
+.font--bold {
+  font-weight: 700;
+}
+.font--semibold {
+  font-weight: 600;
+}
+
+em,
+.font--italic {
+  font-style: italic;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+button {
+  // Font smoothing (since buttons do not inherit this from body)
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// Links
+a,
+a:visited {
+  color: $clv-primary-text-color;
+  cursor: pointer;
+}
+
+a:hover {
+  color: $clv-link;
+}
+
+
+// Helpers
+.font--small {
+  font-size: $small-text;
+}
+
+.text--centered {
+  text-align: center;
+}

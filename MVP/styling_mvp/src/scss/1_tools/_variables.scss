@@ -1,0 +1,48 @@
+// ------------------------------------
+// Colors
+// ------------------------------------
+
+$cl-white: #ffffff;
+$cl-black: #000000;
+$cl-dark-n-stormy: #161616;
+$cl-stirred-tequila-sunrise: #E56C41;
+$cl-cosmopolitan: #e66941;
+$cl-baileys: #F5F4F0;
+$cl-mai-tai: #FCC135;
+$cl-bloody-mary: #e55441;
+$cl-focus: #315784;
+
+// Color variables (theme), always based on other colors
+$clv-background: $cl-baileys;
+$clv-focus: $cl-focus;
+$clv-primary-text-color: $cl-dark-n-stormy;
+$clv-secondary-text-color: $cl-white;
+$clv-primary: $cl-stirred-tequila-sunrise;
+$clv-secondary: $cl-cosmopolitan;
+$clv-borders: $cl-dark-n-stormy;
+$clv-warning: $cl-bloody-mary;
+$clv-link: $cl-bloody-mary;
+
+// ------------------------------------
+// Variables
+// ------------------------------------
+
+// Font units
+$base-font-size: rem-calc(16); // 16px; not sure if rem for font sizes is best practice?
+$base-line-height: 1;
+
+// Font sizes
+$extra-large-text: 60px;
+$large-text: 40px;
+$medium-text: 20px;
+$small-text: 13px;
+
+// Shadow
+$shadow-default: 1px 1px 5px 2px #e0e0e0;
+$shadow-default-bottom: 0 1px 5px 2px #e0e0e0;
+$shadow-focus: 0 0 0 5px $cl-focus;
+$shadow-hover: 0px 0px 1px 1px #e0e0e0;
+
+// Grid
+$gutter-size: 20px;
+// Check file '_bootstrap-grid-settings.scss'
