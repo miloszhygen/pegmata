@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './components/Headings';
 import MenuButton from './components/MenuButton';
-import Link from './components/Link';
+import LinkList from './components/LinkList';
 
 function App() {
   return (
     <div className="page">
       <div className="container">
-        <div className="row p-t-30 p-b-30">
+        <div className="row m-t-30 m-b-30">
           <div className="col-8 col-md-8">
             <Header h="h1" className="h2">
               Spark.
@@ -21,11 +21,24 @@ function App() {
         </div>
       </div>
       <div className="container">
-        <div className="row p-t-30 p-b-30">
+        <div className="row m-t-30 m-b-30 p-l-30 p-r-30">
           <div className="col-12 col-md-6">
-            <Link href="#" arrow noUnderline medium>
-              Slik virker det
-            </Link>
+            <LinkList
+              list={[
+                {
+                  href: '#',
+                  text: 'Slik virker det',
+                },
+                {
+                  href: '#',
+                  text: 'Våre priser',
+                },
+                {
+                  href: '#',
+                  text: 'Se alle modelene våre',
+                },
+              ]}
+            />
           </div>
         </div>
       </div>

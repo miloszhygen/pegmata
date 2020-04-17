@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
   &--arrow {
     width: 24px;
   }
+
   &--secondary {
     @include link-init($clv-secondary, true, $clv-secondary);
   }
@@ -16,6 +16,11 @@
       @include underline(transparent);
     }
   }
+
+  &--list-underline {
+    @include underline($clv-primary-text-color);
+  }
+
   &--button {
     box-sizing: border-box;
     display: inline-block;
@@ -29,16 +34,23 @@
     cursor: pointer;
     @extend .b-link--no-underline;
   }
+
   &--button-secondary {
     @extend .b-link--button;
     border: 2px solid $clv-link;
     color: $clv-link !important;
     background: white;
   }
+
   &--small {
     font-size: $small-text;
   }
+
   &--medium {
     font-size: $medium-text;
+  }
+
+  &--line-height-tall {
+    line-height: 60px;
   }
 }
