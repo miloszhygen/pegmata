@@ -1,11 +1,11 @@
 @import './fonts';
-@import "../1_tools/variables";
+@import '../1_tools/variables';
 
 // Global defaults
 body {
   color: $clv-primary-text-color;
   line-height: $base-line-height;
-  font-family: YoungSerif, serif;
+  font-family: $font-regular-family;
   font-size: $base-font-size;
   // Font smoothing
   -moz-osx-font-smoothing: grayscale;
@@ -41,14 +41,22 @@ button {
 }
 
 // Links
-a,
-a:visited {
-  color: $clv-primary-text-color;
+a {
+  &:link,
+  &:hover,
+  &:visited,
+  &:active {
+    color: $clv-primary-text-color;
+  }
   cursor: pointer;
-}
 
-a:hover {
-  color: $clv-link;
+  &:hover {
+    color: $clv-link;
+    box-shadow: $link-underline $clv-link;
+  }
+
+  text-decoration: none;
+  box-shadow: $link-underline $clv-primary-text-color;
 }
 
 

@@ -1,12 +1,11 @@
-// Both fonts are from https://open-foundry.com/fonts and the closest I could find to the propritery font from the sketches
+@import "../1_tools/variables";
 
 @font-face {
-  font-family: Bagnard;
-  src: url("../../assets/fonts/Bagnard.otf") format("opentype");
+  font-family: $font-regular-name;
+  src: url($font-regular-path) format($font-regular-type);
 }
 
-// best alternative
 @font-face {
-  font-family: YoungSerif;
-  src: url("../../assets/fonts/YoungSerif-Regular.otf") format("opentype");
+  font-family: $font-bold-name;
+  src: url($font-bold-path) format($font-bold-type);
 }

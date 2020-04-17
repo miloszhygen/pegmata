@@ -19,16 +19,16 @@ $grid-breakpoints: (
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
-
+// https://getbootstrap.com/docs/4.4/layout/grid/#customizing-the-grid
 $container-max-widths: (
   // Small screen / phone
-  sm: 3000px, // sm: 576px,
+  sm: 570px, // sm: 576px,
   // Medium screen / tablet
-  md: 3001px, // md: 768px,
+  md: 760px, // md: 768px,
   // Large screen / desktop
-  lg: 3002px, // lg: 980px,
+  lg: 975px, // lg: 980px,
   // Extra large screen / wide desktop
-  xl: 3003px, // xl: 1276px
+  xl: 1270px, // xl: 1276px
 ) !default;
 
 // Grid columns
@@ -38,21 +38,5 @@ $container-max-widths: (
 $grid-columns: 12 !default;
 $grid-gutter-width: 40px !default;
 
-// We don't want padding on our setup at this width
-// 1276 (xl) + 20 + 20 ('container' padding left + right)
-@media (min-width: 1332px) {
-  .container {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-  }
-}
 
-// See https://getbootstrap.com/docs/4.0/layout/grid/#example-usage
-// for details on how to use breakpoints, like so:
-//
-// .className {
-//   @include media-breakpoint-up(sm) {
-//     // do your thing
-//   }
-// }
 @import '../../../node_modules/bootstrap-4-grid/scss/breakpoints/mixins/breakpoints';

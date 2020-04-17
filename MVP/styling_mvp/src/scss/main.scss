@@ -17,8 +17,16 @@ html {
 
 @import '1_tools/helpers';
 @import '1_tools/bootstrap-grid-settings';
+@import '1_tools/mixins';
 
 @import '2_base/body';
 @import '2_base/typography';
 
-@import '../components/Header/header';
+// Default bootstrap grid. This can be configured, maybe even replaced by another grid.
+@import '~bootstrap-4-grid/scss/grid';
+// hamburger
+@import '~hamburgers/_sass/hamburgers/hamburgers';
+
+@import '../components/Headings/headings';
+@import '../components/MenuButton/MenuButton';
+@import '../components/Link/Link';

@@ -1,0 +1,44 @@
+.b-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  &--arrow {
+    width: 24px;
+  }
+  &--secondary {
+    @include link-init($clv-secondary, true, $clv-secondary);
+  }
+
+  &--no-underline {
+    @include underline(transparent);
+    &:hover {
+      @include underline(transparent);
+    }
+  }
+  &--button {
+    box-sizing: border-box;
+    display: inline-block;
+    color: white !important;
+    background-color: $clv-link;
+    padding: 0.5em 2em;
+    border-radius: 2em;
+    margin: 0;
+    border: 0;
+    font-size: $base-font-size;
+    cursor: pointer;
+    @extend .b-link--no-underline;
+  }
+  &--button-secondary {
+    @extend .b-link--button;
+    border: 2px solid $clv-link;
+    color: $clv-link !important;
+    background: white;
+  }
+  &--small {
+    font-size: $small-text;
+  }
+  &--medium {
+    font-size: $medium-text;
+  }
+}

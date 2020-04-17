@@ -1,0 +1,31 @@
+
+@mixin link-init($color, $underline: false, $underline-color: $color) {
+  &:link,
+  &:hover,
+  &:visited,
+  &:active {
+    color: $color;
+    box-shadow: none;
+    border-bottom: 0;
+    text-decoration: none;
+
+    @if $underline == true {
+      box-shadow: 0 1px 0 $underline-color;
+    }
+  }
+}
+
+@mixin underline($color) {
+  box-shadow: 0 1px 0 $color;
+}
+
+@mixin pseudo-arrow($direction) {
+  display: inline-block;
+  height: 0.8em;
+  width: 0.8em;
+  margin-left: 0.4em;
+  content: '';
+  background-image: url($direction);
+  background-size: 0.8em;
+  background-repeat: no-repeat;
+}
