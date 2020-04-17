@@ -3,6 +3,8 @@ import Header from './components/Headings';
 import MenuButton from './components/MenuButton';
 import LinkList from './components/LinkList';
 
+import mainImage from './assets/images/mainImage.png';
+
 function App() {
   return (
     <div className="page">
@@ -19,8 +21,9 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="container">
+        <div className="row m-t-30 m-b-30">
+          <img src={mainImage} alt="child being pulled on spark" />
+        </div>
         <div className="row m-t-30 m-b-30 p-l-30 p-r-30">
           <div className="col-12 col-md-6">
             <LinkList
