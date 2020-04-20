@@ -17,18 +17,18 @@ const linkClasses = (
   arrowLeft,
 ) =>
   classNames({
-    'b-link--small': small,
-    'b-link--medium': medium || arrow || arrowLeft,
-    'b-link--secondary': secondary,
-    'b-link--button': button,
-    'b-link--button-secondary': buttonSecondary,
-    'b-link--no-underline': noUnderline || listUnderline,
-    'b-link--line-height-tall': lineHeightTall,
+    'link--small': small,
+    'link--medium': medium || arrow || arrowLeft,
+    'link--secondary': secondary,
+    'link--button': button,
+    'link--button-secondary': buttonSecondary,
+    'link--no-underline': noUnderline || listUnderline,
+    'link--line-height-tall': lineHeightTall,
   });
 
 const Link = props => (
-  <div className={props.listUnderline ? 'b-link b-link--list-underline' : 'b-link'}>
-    {props.arrowLeft && <img className="b-link--arrow" src={arrowLeft} alt="arrow-left" />}
+  <div className={props.listUnderline ? 'link link--list-underline' : 'link'}>
+    {props.arrowLeft && <img className="link--arrow" src={arrowLeft} alt="arrow-left" />}
     <a
       href={props.href}
       className={linkClasses(
@@ -46,7 +46,7 @@ const Link = props => (
     >
       {props.children}
     </a>
-    {props.arrow && <img className="b-link--arrow" src={arrowRight} alt="arrow-right" />}
+    {props.arrow && <img className="link--arrow" src={arrowRight} alt="arrow-right" />}
   </div>
 );
 

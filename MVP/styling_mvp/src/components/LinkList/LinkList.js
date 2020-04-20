@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from '../Link';
 
 const LinkList = ({ list }) => (
-  <div className="b-linkList">
+  <div className="linkList">
     {list.map((link, i) => (
       <Link key={i} href={link.href} arrow listUnderline medium lineHeightTall>
         {link.text}
