@@ -1,0 +1,25 @@
+.campaignCard {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $medium-width) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  &__image {
+    padding: 0 40px 0 40px;
+    @media (min-width: $medium-width) {
+      flex-grow: 1;
+      max-width: 50%;
+      padding: 40px;
+      order: 5;
+    }
+  }
+
+  &__info {
+    @media (min-width: $medium-width) {
+      flex-grow: 1;
+      padding: 0 0 0 10px;
+    }
+  }
+}

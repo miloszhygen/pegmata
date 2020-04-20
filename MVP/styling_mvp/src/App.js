@@ -1,31 +1,32 @@
 import React from 'react';
-import Header from './components/Headings';
+import Heading from './components/Heading';
 import MenuButton from './components/MenuButton';
 import LinkList from './components/LinkList';
 
 import mainImage from './assets/images/mainImage.png';
+import kidOnSled from './assets/images/kidOnSled2.png';
+import Image from './components/Image';
+import CampaignCard from './components/CampaignCard';
 
 function App() {
   return (
     <div className="page">
       <div className="container">
         <div className="row m-t-30 m-b-30">
-          <div className="col-8 col-md-8">
-            <Header h="h1" className="h2">
+          <div className="col-8">
+            <Heading h="h1" className="h2">
               Spark.
-            </Header>
+            </Heading>
           </div>
-          <div className="col-4 col-md-4">
-            <div className="float-right">
-              <MenuButton />
-            </div>
+          <div className="col-4">
+            <MenuButton />
           </div>
         </div>
         <div className="row m-t-30 m-b-30">
-          <img src={mainImage} alt="child being pulled on spark" />
+          <Image src={mainImage} altText="child being pulled on spark" />
         </div>
-        <div className="row m-t-30 m-b-30 p-l-30 p-r-30">
-          <div className="col-12 col-md-6">
+        <div className="row m-t-80">
+          <div className="col-10 col-md-6 center">
             <LinkList
               list={[
                 {
@@ -42,6 +43,14 @@ function App() {
                 },
               ]}
             />
+          </div>
+          <div className="col-md-6 hide-mobile">
+            <Image src={kidOnSled} altText="2 children being pulled on spark" />
+          </div>
+        </div>
+        <div className="row m-t-80 m-b-30">
+          <div className="col-10 col-md-10 center">
+            <CampaignCard />
           </div>
         </div>
       </div>

@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 //import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const menuButtonClasses = open =>
+const menuButtonClasses = () =>
+  classNames({
+    menuButton: true,
+  });
+
+const hamburgerClasses = open =>
   classNames({
     hamburger: true,
     'hamburger--slider': true,
@@ -14,11 +19,13 @@ const MenuButton = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <button className={menuButtonClasses(open)} type="button" onClick={() => setOpen(!open)}>
-      <span className="hamburger-box">
-        <span className="hamburger-inner"></span>
-      </span>
-    </button>
+    <div className={menuButtonClasses()}>
+      <button className={hamburgerClasses(open)} type="button" onClick={() => setOpen(!open)}>
+        <span className="hamburger-box">
+          <span className="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
   );
 };
 

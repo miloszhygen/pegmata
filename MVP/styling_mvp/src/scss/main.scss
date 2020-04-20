@@ -27,6 +27,9 @@ html {
 // hamburger
 @import '~hamburgers/_sass/hamburgers/hamburgers';
 
-@import '../components/Headings/headings';
+@import '../components/CampaignCard/CampaignCard';
+@import '../components/Heading/Heading';
+@import '../components/Image/Image';
 @import '../components/Link/Link';
 @import '../components/LinkList/LinkList';
+@import '../components/MenuButton/MenuButton';
