@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="page">
       <div className="container">
-        <div className="row m-t-30 m-b-30">
+        <div className="row m-t-30">
           <div className="col-8">
             <Heading h="h1" className="h2">
               Spark.
@@ -22,7 +22,7 @@ function App() {
             <MenuButton />
           </div>
         </div>
-        <div className="row m-t-30 m-b-30">
+        <div className="row m-t-30">
           <Image src={mainImage} altText="child being pulled on spark" />
         </div>
         <div className="row m-t-80">
@@ -49,7 +49,7 @@ function App() {
           </div>
         </div>
         <div className="row m-t-80 m-b-30">
-          <div className="col-10 col-md-10 center">
+          <div className="col-12 col-md-11 center">
             <CampaignCard />
           </div>
         </div>

@@ -3,23 +3,58 @@
   flex-direction: column;
   @media (min-width: $medium-width) {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   &__image {
-    padding: 0 40px 0 40px;
+    padding-left: 0;
+    max-width: 60%;
+    margin: 0 auto 66px auto;
     @media (min-width: $medium-width) {
-      flex-grow: 1;
       max-width: 50%;
-      padding: 40px;
+      margin-left: 40px;
       order: 5;
+      align-self: flex-start;
+    }
+    @media (min-width: $large-width) {
+      margin-left: 70px;
     }
   }
 
   &__info {
     @media (min-width: $medium-width) {
-      flex-grow: 1;
-      padding: 0 0 0 10px;
+      max-width: 50%;
     }
+  }
+  &__infoText {
+    margin-top: 32px;
+  }
+  &__iconContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-between;
+    width: 100%;
+    @media (min-width: $small-width) and (max-width: $medium-width){
+      width: 80%;
+    }
+    @media (min-width: $large-width) {
+      width: 80%;
+    }
+  }
+  &__iconElement {
+    display: flex;
+    max-width: 49%;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__icon {
+    margin-right: 16px;
+  }
+  &__iconText {
+    font-family: $font-mono-name;
+    font-size: $small-text;
+    line-height: 26px;
+    height: 52px;
   }
 }
