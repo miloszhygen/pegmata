@@ -7,6 +7,7 @@ import mainImage from './assets/images/mainImage.png';
 import kidOnSled from './assets/images/kidOnSled2.png';
 import Image from './components/Image';
 import CampaignCard from './components/CampaignCard';
+import ProductCard from './components/ProductCard';
 
 function App() {
   return (
@@ -51,6 +52,12 @@ function App() {
         <div className="row m-t-80 m-b-30">
           <div className="col-12 col-md-11 center">
             <CampaignCard />
+          </div>
+        </div>
+        <div className="row m-t-80 m-b-30">
+          <div className="col-12 col-md-11 center-text">
+            <Heading h="h2">Våre modeller</Heading>
+            <ProductCard />
           </div>
         </div>
       </div>

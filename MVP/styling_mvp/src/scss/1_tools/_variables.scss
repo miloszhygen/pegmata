@@ -8,10 +8,11 @@ $cl-orange: #e56c41;
 $cl-yellow: #fcc135;
 $cl-white: #ffffff;
 
-$cl-focus: #315784;
+$cl-blue: #315784;
 $cl-red: #e55441;
 
 // Color variables (theme), always based on other colors
+// The rule is to use these colors, not the cl- ones, as much as possible
 $clv-background: $cl-grey;
 $clv-primary-text-color: $cl-black;
 $clv-secondary-text-color: $cl-white;
@@ -21,7 +22,7 @@ $clv-borders: $cl-black;
 $clv-link: $cl-orange;
 
 $clv-warning: $cl-red;
-$clv-focus: $cl-focus;
+$clv-focus: $cl-blue;
 
 // ------------------------------------
 // Fonts
@@ -45,9 +46,11 @@ $base-font-size: rem-calc(16); // 16px; not sure if rem for font sizes is best p
 $base-line-height: 1;
 
 // Font sizes
+$gigantic-text: 90px;
 $extra-large-text: 60px;
 $large-text: 36px;
 $medium-text: 24px;
+$readable-text: 18px;
 $small-text: 13px;
 
 // ------------------------------------

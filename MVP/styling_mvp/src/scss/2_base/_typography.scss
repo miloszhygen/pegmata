@@ -16,7 +16,7 @@ body {
 // Basic elements
 strong,
 .font--bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 .font--semibold {
   font-weight: 600;
@@ -30,7 +30,8 @@ em,
 p {
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1.65;
+  line-height: 1.65;  //same as 26,5px
+  font-size: $readable-text;
 }
 
 button {

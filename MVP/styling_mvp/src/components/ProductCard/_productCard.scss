@@ -1,0 +1,31 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  background-color: $cl-white;
+  padding: 0 21px 24px 21px;
+
+  &__image {
+    max-height: 33%;
+    padding-right: 90px;
+  }
+  &__title {
+    margin-top: 16px;
+  }
+  &__line {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid $cl-black;
+    margin: 16px 0;
+    padding: 0;
+  }
+  &__text {
+    margin-right: 50px;
+  }
+  &__price {
+    margin-top: 14px;
+  }
+  &__button {
+    margin-top: 27px;
+  }
+}
