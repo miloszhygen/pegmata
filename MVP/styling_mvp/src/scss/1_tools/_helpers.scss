@@ -140,8 +140,14 @@ $large-width: #{map-get($grid-breakpoints, lg)}; // 980px
   justify-content: center;
 }
 
+// TODO this feels hacky...
 .hide-mobile{
   @media (max-width: $medium-width) {
+    display: none !important;
+  }
+}
+.hide-desktop{
+  @media (min-width: $medium-width) {
     display: none !important;
   }
 }

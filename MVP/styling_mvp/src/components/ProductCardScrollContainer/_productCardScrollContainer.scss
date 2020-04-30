@@ -1,0 +1,23 @@
+$container-width:($card-width*3) + ($card-space*2);
+$container-width-desktop: ($card-width-desktop*3) + ($card-space*2);
+
+.productCardContainerOuter {
+  overflow-x: scroll;
+  width: 100%;
+  height: $card-height;
+  max-width: $container-width;
+  margin: 45px auto 45px auto;
+  @media (min-width: $medium-width) {
+    margin: 55px auto 55px auto;
+    height: $card-height-desktop + 110px ;
+    max-width: $container-width-desktop;
+  }
+}
+.productCardContainerInner {
+  display: flex;
+  flex-direction: row;
+  width: $container-width;
+  @media (min-width: $medium-width) {
+    width: $container-width-desktop;
+  }
+}

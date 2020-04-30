@@ -1,12 +1,33 @@
+$card-width: 300px;
+$card-width-desktop: 330px;
+$card-height:500px;
+$card-height-desktop:600px;
+$card-space: 10px;
+
 .productCard {
   display: flex;
   flex-direction: column;
   background-color: $cl-white;
+  height: $card-height;
+  width: $card-width;
   padding: 0 21px 24px 21px;
+  margin-right: 25px;
+  :last-child {
+    margin-right: 0;
+  }
+  @media (min-width: $medium-width) {
+    background-color: $clv-background;
+    height: $card-height-desktop;
+    width: $card-width-desktop;
+  }
 
   &__image {
     max-height: 33%;
-    padding-right: 90px;
+    padding-right: 70px;
+    margin-bottom: 16px;
+    @media (min-width: $medium-width) {
+      padding-right: inherit;
+    }
   }
   &__title {
     margin-top: 16px;
@@ -20,7 +41,7 @@
     padding: 0;
   }
   &__text {
-    margin-right: 50px;
+    margin-right: 40px;
   }
   &__price {
     margin-top: 14px;

@@ -3,11 +3,16 @@ import Image from '../Image';
 import Heading from '../Heading';
 
 import sledSmall from '../../assets/images/sledSmall.svg';
+import sledLarge from '../../assets/images/sledLarge.svg';
 
+// TODO: get data in as props
 const ProductCard = () => (
   <div className="productCard">
-    <div className="productCard__image">
+    <div className="productCard__image hide-desktop">
       <Image src={sledSmall} altText="small sled" />
+    </div>
+    <div className="productCard__image hide-mobile">
+      <Image src={sledLarge} altText="large sled" />
     </div>
     <Heading h="h3" className="productCard__title">
       Familie sparken

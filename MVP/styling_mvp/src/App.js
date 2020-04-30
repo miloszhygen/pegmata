@@ -8,6 +8,7 @@ import kidOnSled from './assets/images/kidOnSled2.png';
 import Image from './components/Image';
 import CampaignCard from './components/CampaignCard';
 import ProductCard from './components/ProductCard';
+import ProductCardScrollContainer from './components/ProductCardScrollContainer';
 
 function App() {
   return (
@@ -55,9 +56,15 @@ function App() {
           </div>
         </div>
         <div className="row m-t-80 m-b-30">
-          <div className="col-12 col-md-11 center-text">
-            <Heading h="h2">Våre modeller</Heading>
-            <ProductCard />
+          <div className="col-12">
+            <Heading h="h2" className="center-text">
+              Våre modeller
+            </Heading>
+            <ProductCardScrollContainer>
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+            </ProductCardScrollContainer>
           </div>
         </div>
       </div>
