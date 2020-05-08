@@ -7,7 +7,7 @@ $container-width-desktop: ($card-width-desktop*3) + ($card-space*2);
   height: $card-height;
   max-width: $container-width;
   margin: 45px auto 45px auto;
-  @media (min-width: $medium-width) {
+  @media (min-width: $large-width) {
     margin: 55px auto 55px auto;
     height: $card-height-desktop + 110px ;
     max-width: $container-width-desktop;
@@ -17,7 +17,7 @@ $container-width-desktop: ($card-width-desktop*3) + ($card-space*2);
   display: flex;
   flex-direction: row;
   width: $container-width;
-  @media (min-width: $medium-width) {
+  @media (min-width: $large-width) {
     width: $container-width-desktop;
   }
 }

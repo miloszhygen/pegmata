@@ -55,17 +55,17 @@ function App() {
             <CampaignCard />
           </div>
         </div>
-        <div className="row m-t-80 m-b-30">
-          <div className="col-12">
-            <Heading h="h2" className="center-text">
-              Våre modeller
-            </Heading>
-            <ProductCardScrollContainer>
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-            </ProductCardScrollContainer>
-          </div>
+      </div>
+      <div className="row m-t-80 m-b-30">
+        <div className="col-12">
+          <Heading h="h2" className="center-text">
+            Våre modeller
+          </Heading>
+          <ProductCardScrollContainer>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </ProductCardScrollContainer>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ $card-space: 10px;
   :last-child {
     margin-right: 0;
   }
-  @media (min-width: $medium-width) {
+  @media (min-width: $large-width) {
     background-color: $clv-background;
     height: $card-height-desktop;
     width: $card-width-desktop;
@@ -25,7 +25,7 @@ $card-space: 10px;
     max-height: 33%;
     padding-right: 70px;
     margin-bottom: 16px;
-    @media (min-width: $medium-width) {
+    @media (min-width: $large-width) {
       padding-right: inherit;
     }
   }
