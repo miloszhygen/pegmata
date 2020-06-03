@@ -1,0 +1,90 @@
+@import "../../scss/1_tools/variables";
+
+// Removes spacing aroung the heading, sets defaults
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+  line-height: 1.25;
+  hyphens: auto;
+}
+
+// Heading sizes
+h1,
+.h1 {
+  font-family: $font-bold-family;
+  font-weight: 800;
+  font-size: $gigantic-text;
+  line-height: 98px;
+  @media (min-width: $medium-width) {
+    font-size: $extra-large-text;
+    line-height: 68px;
+  }
+}
+h2,
+.h2 {
+  font-family: $font-bold-family;
+  font-weight: 400;
+  font-size: $large-text;
+  line-height: 46px;
+  @media (min-width: $medium-width) {
+    font-size: $extra-large-text;
+    line-height: 68px;
+  }
+}
+h3,
+.h3 {
+  font-size: $medium-text;
+  font-family: $font-regular-family;
+  font-weight: 600;
+  line-height: 38px;
+}
+h4,
+.h4 {
+  font-size: $medium-text;
+  font-family: $font-regular-family
+}
+h5,
+.h5 {
+  font-size: $small-text;
+  text-transform: uppercase;
+  font-family: $font-bold-family;
+  font-weight: 400;
+}
+
+// Heading weights
+.h0, // 'h0' is only used to reset styles on dynamic headings we don't know the type of
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  &--light {
+    font-weight: lighter;
+  }
+  &--normal {
+    font-weight: normal;
+  }
+  &--bold {
+    font-weight: bold;
+  }
+  &--primary-color {
+    color: $clv-primary;
+  }
+  &--secondary-color {
+    color: $clv-secondary;
+  }
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

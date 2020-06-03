@@ -1,0 +1,37 @@
+@import '1_tools/functions';
+@import '1_tools/variables';
+@import '2_base/fonts';
+
+html {
+  height: 100%;
+  font-size: $base-font-size;
+}
+
+// -------------------------------------------------------------------------- //
+// If we ever need to namespace styles (wrap it all in a class on the
+//  'html' tag, for instance), do it from this point on
+// -------------------------------------------------------------------------- //
+
+// Normalize browser defaults, the tilde tells react its from a node module
+@import '~modern-normalize/modern-normalize.css';
+
+@import '1_tools/helpers';
+@import '1_tools/bootstrap-grid-settings';
+@import '1_tools/mixins';
+
+@import '2_base/body';
+@import '2_base/typography';
+
+// Default bootstrap grid. This can be configured, maybe even replaced by another grid.
+@import '~bootstrap-4-grid/scss/grid';
+// hamburger
+@import '~hamburgers/_sass/hamburgers/hamburgers';
+
+@import '../components/CampaignCard/CampaignCard';
+@import '../components/Heading/Heading';
+@import '../components/Image/Image';
+@import '../components/Link/Link';
+@import '../components/LinkList/LinkList';
+@import '../components/MenuButton/MenuButton';
+@import '../components/ProductCard/ProductCard';
+@import '../components/ProductCardScrollContainer/ProductCardScrollContainer';

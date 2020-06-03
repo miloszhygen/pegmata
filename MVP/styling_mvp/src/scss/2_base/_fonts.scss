@@ -1,0 +1,16 @@
+@import "../1_tools/variables";
+
+@font-face {
+  font-family: $font-regular-name;
+  src: url($font-regular-path) format($font-regular-type);
+}
+
+@font-face {
+  font-family: $font-mono-name;
+  src: url($font-mono-path) format($font-mono-type);
+}
+
+@font-face {
+  font-family: $font-bold-name;
+  src: url($font-bold-path) format($font-bold-type);
+}

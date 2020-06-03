@@ -1,24 +1,73 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Heading from './components/Heading';
+import MenuButton from './components/MenuButton';
+import LinkList from './components/LinkList';
+
+import mainImage from './assets/images/mainImage.png';
+import kidOnSled from './assets/images/kidOnSled2.png';
+import Image from './components/Image';
+import CampaignCard from './components/CampaignCard';
+import ProductCard from './components/ProductCard';
+import ProductCardScrollContainer from './components/ProductCardScrollContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page">
+      <div className="container">
+        <div className="row m-t-30">
+          <div className="col-8">
+            <Heading h="h1" className="h2">
+              Spark.
+            </Heading>
+          </div>
+          <div className="col-4">
+            <MenuButton />
+          </div>
+        </div>
+        <div className="row m-t-30">
+          <Image src={mainImage} altText="child being pulled on spark" />
+        </div>
+        <div className="row m-t-80">
+          <div className="col-10 col-md-6 center">
+            <LinkList
+              list={[
+                {
+                  href: '#',
+                  text: 'Slik virker det',
+                },
+                {
+                  href: '#',
+                  text: 'Våre priser',
+                },
+                {
+                  href: '#',
+                  text: 'Se alle modelene våre',
+                },
+              ]}
+            />
+          </div>
+          <div className="col-md-6 hide-mobile">
+            <Image src={kidOnSled} altText="2 children being pulled on spark" />
+          </div>
+        </div>
+        <div className="row m-t-80 m-b-30">
+          <div className="col-12 col-md-11 center">
+            <CampaignCard />
+          </div>
+        </div>
+        <div className="row m-t-80 m-b-30">
+          <div className="col-12">
+            <Heading h="h2" className="center-text">
+              Våre modeller
+            </Heading>
+            <ProductCardScrollContainer>
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+            </ProductCardScrollContainer>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

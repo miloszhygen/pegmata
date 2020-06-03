@@ -1,0 +1,80 @@
+// ------------------------------------
+// Colors
+// ------------------------------------
+
+$cl-grey: #e5e5e5;
+$cl-black: #161616;
+$cl-orange: #e56c41;
+$cl-yellow: #fcc135;
+$cl-white: #ffffff;
+
+$cl-blue: #315784;
+$cl-red: #e55441;
+
+// Color variables (theme), always based on other colors
+// The rule is to use these colors, not the cl- ones, as much as possible
+$clv-background: $cl-grey;
+$clv-primary-text-color: $cl-black;
+$clv-secondary-text-color: $cl-white;
+$clv-primary: $cl-yellow;
+$clv-secondary: $cl-orange;
+$clv-borders: $cl-black;
+$clv-link: $cl-orange;
+
+$clv-warning: $cl-red;
+$clv-focus: $cl-blue;
+
+// ------------------------------------
+// Fonts
+// ------------------------------------
+
+$font-regular-name: IBMPlexSansRegular;
+$font-regular-family: $font-regular-name, sans-serif;
+$font-regular-path: '../../assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf';
+$font-regular-type: 'truetype';
+$font-mono-name: IBMPlexMono;
+$font-mono-family: $font-mono-name, sans-serif;
+$font-mono-path: '../../assets/fonts/IBM_Plex_Sans/IBMPlexMono-Regular.ttf';
+$font-mono-type: 'truetype';
+$font-bold-name: WorkSansExtraBold;
+$font-bold-family: $font-bold-name, sans-serif;
+$font-bold-path: '../../assets/fonts/work-sans/WorkSans-ExtraBold.otf';
+$font-bold-type: 'opentype';
+
+// Font units
+$base-font-size: rem-calc(16); // 16px; not sure if rem for font sizes is best practice?
+$base-line-height: 1;
+
+// Font sizes
+$gigantic-text: 90px;
+$extra-large-text: 60px;
+$large-text: 36px;
+$medium-text: 24px;
+$readable-text: 18px;
+$small-text: 13px;
+
+// ------------------------------------
+// Spacing
+// ------------------------------------
+
+// ??
+
+// ------------------------------------
+// Icons
+// ------------------------------------
+$arrow-left: '../../assets/icons/arrow-left.svg';
+$arrow-right: '../../assets/icons/arrow-right.svg';
+
+// ------------------------------------
+// Other variables
+// ------------------------------------
+// Shadow
+$shadow-default: 1px 1px 5px 2px #e0e0e0;
+$shadow-default-bottom: 0 1px 5px 2px #e0e0e0;
+$shadow-focus: 0 0 0 5px $clv-focus;
+$shadow-hover: 0px 0px 1px 1px #e0e0e0;
+
+$link-underline: 0 1px 0;
+// Grid
+$gutter-size: 20px;
+// Check file '_bootstrap-grid-settings.scss'

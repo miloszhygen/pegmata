@@ -1,0 +1,24 @@
+@import "../1_tools/variables";
+
+$page-content-width: calc(100% - 200px);
+
+html,
+body,
+.page {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  background-color: $clv-background;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
