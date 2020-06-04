@@ -2,27 +2,26 @@ $card-width: 300px;
 $card-width-desktop: 330px;
 $card-height:500px;
 $card-height-desktop:600px;
-$card-space: 10px;
+$card-space: 25px;
 
 .productCard {
   display: flex;
   flex-direction: column;
   background-color: $cl-white;
-  height: $card-height;
+  height: auto;
   width: $card-width;
   padding: 0 21px 24px 21px;
-  margin-right: 25px;
+  margin-right: $card-space;
   :last-child {
     margin-right: 0;
   }
   @media (min-width: $large-width) {
     background-color: $clv-background;
-    height: $card-height-desktop;
+    height: auto;
     width: $card-width-desktop;
   }
 
   &__image {
-    max-height: 33%;
     padding-right: 70px;
     margin-bottom: 16px;
     @media (min-width: $large-width) {

@@ -4,12 +4,16 @@ $container-width-desktop: ($card-width-desktop*3) + ($card-space*2);
 .productCardContainerOuter {
   overflow-x: scroll;
   width: 100%;
-  height: $card-height;
+  height: auto;
   max-width: $container-width;
-  margin: 45px auto 45px auto;
+  margin: 45px auto 45px 20px;
+  @media (min-width: $medium-width) {
+    margin-left: 45px;
+  }
   @media (min-width: $large-width) {
+    overflow-x: auto;
     margin: 55px auto 55px auto;
-    height: $card-height-desktop + 110px ;
+    height: auto;
     max-width: $container-width-desktop;
   }
 }
