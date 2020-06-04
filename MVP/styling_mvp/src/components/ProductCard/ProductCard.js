@@ -4,6 +4,7 @@ import Heading from '../Heading';
 
 import sledSmall from '../../assets/images/sledSmall.svg';
 import sledLarge from '../../assets/images/sledLarge.svg';
+import Link from '../Link';
 
 // TODO: get data in as props
 const ProductCard = () => (
@@ -27,7 +28,7 @@ const ProductCard = () => (
       </Heading>
     </div>
     <div className="productCard__button">
-      <button>Bestill og hent</button>
+      <Link button>Bestill og hent</Link>
     </div>
   </div>
 );

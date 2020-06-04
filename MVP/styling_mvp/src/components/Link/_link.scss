@@ -24,22 +24,37 @@
   &--button {
     box-sizing: border-box;
     display: inline-block;
-    color: white !important;
-    background-color: $clv-link;
+    color: $clv-primary-text-color !important;
+    background-color: $clv-primary;
+    border: 2px solid transparent;
     padding: 0.5em 2em;
     border-radius: 2em;
     margin: 0;
-    border: 0;
     font-size: $base-font-size;
     cursor: pointer;
+
     @extend .link--no-underline;
+
+    &:hover{
+      border: 2px solid $clv-primary-text-color;
+    }
+    &:active {
+      background-color: lighten($clv-primary, 10%);
+    }
   }
 
   &--button-secondary {
     @extend .link--button;
-    border: 2px solid $clv-link;
-    color: $clv-link !important;
-    background: white;
+    background: $cl-white;
+
+    &:hover{
+      border: 2px solid $clv-link;
+      color: $clv-link !important;
+    }
+    &:active {
+      background-color: lighten($clv-link, 35%);
+      color: darken($clv-link, 15%) !important;
+    }
   }
 
   &--small {

@@ -56,6 +56,6 @@ export const button = () => (
 
 export const buttonSecondary = () => (
   <Link href="#" buttonSecondary>
-    Slik virker det
+    Logg inn
   </Link>
 );

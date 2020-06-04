@@ -9,19 +9,25 @@ import Image from './components/Image';
 import CampaignCard from './components/CampaignCard';
 import ProductCard from './components/ProductCard';
 import ProductCardScrollContainer from './components/ProductCardScrollContainer';
+import Link from './components/Link';
 
 function App() {
   return (
     <div className="page">
       <div className="container">
         <div className="row m-t-30">
-          <div className="col-8">
+          <div className="col-6 col-l-8">
             <Heading h="h1" className="h2">
               Spark.
             </Heading>
           </div>
-          <div className="col-4">
-            <MenuButton />
+          <div className="col-6 col-l-4 flex flex--justify-end">
+            <div className="flex-item--align-self-center m-r-25 hide-mobile">
+              <Link buttonSecondary text="Logg inn" />
+            </div>
+            <div className="flex-item--align-self-center">
+              <MenuButton />
+            </div>
           </div>
         </div>
         <div className="row m-t-30">

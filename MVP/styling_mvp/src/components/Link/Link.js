@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import arrowRight from '../../assets/icons/arrow-right.svg';
-import arrowLeft from '../../assets/icons/arrow-left.svg';
+import arrowRightSrc from '../../assets/icons/arrow-right.svg';
+import arrowLeftSrc from '../../assets/icons/arrow-left.svg';
+
+const truncateString = (str, num) => (str.length <= num ? str : str.slice(0, num) + '...');
 
 const linkClasses = (
   small,
@@ -26,27 +28,41 @@ const linkClasses = (
     'link--line-height-tall': lineHeightTall,
   });
 
-const Link = props => (
-  <div className={props.listUnderline ? 'link link--list-underline' : 'link'}>
-    {props.arrowLeft && <img className="link--arrow" src={arrowLeft} alt="arrow-left" />}
+const Link = ({
+  href,
+  small,
+  medium,
+  secondary,
+  button,
+  buttonSecondary,
+  noUnderline,
+  listUnderline,
+  lineHeightTall,
+  arrow,
+  arrowLeft,
+  text,
+  children,
+}) => (
+  <div className={listUnderline ? 'link link--list-underline' : 'link'}>
+    {arrowLeft && <img className="link--arrow" src={arrowLeftSrc} alt="arrow-left" />}
     <a
-      href={props.href}
+      href={href}
       className={linkClasses(
-        props.small,
-        props.medium,
-        props.secondary,
-        props.button,
-        props.buttonSecondary,
-        props.noUnderline,
-        props.lineHeightTall,
-        props.listUnderline,
-        props.arrow,
-        props.arrowLeft,
+        small,
+        medium,
+        secondary,
+        button,
+        buttonSecondary,
+        noUnderline,
+        lineHeightTall,
+        listUnderline,
+        arrow,
+        arrowLeft,
       )}
     >
-      {props.children}
+      {children ? children : truncateString(text, 16)}
     </a>
-    {props.arrow && <img className="link--arrow" src={arrowRight} alt="arrow-right" />}
+    {arrow && <img className="link--arrow" src={arrowRightSrc} alt="arrow-right" />}
   </div>
 );
 
@@ -62,6 +78,7 @@ Link.propTypes = {
   noUnderline: PropTypes.bool,
   listUnderline: PropTypes.bool,
   lineHeightTall: PropTypes.bool,
+  text: PropTypes.string,
   children: PropTypes.node,
 };
 

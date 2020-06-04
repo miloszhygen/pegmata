@@ -13,6 +13,7 @@ $small-width: #{map-get($grid-breakpoints, sm)}; // 769px
 $medium-width: #{map-get($grid-breakpoints, md)}; // 769px
 $large-width: #{map-get($grid-breakpoints, lg)}; // 980px
 
+// TODO: add breakpoints to this so that it can vary with size?
 @each $side in $sides {
   @for $i from 1 through length($space-values) {
 
@@ -83,6 +84,50 @@ $large-width: #{map-get($grid-breakpoints, lg)}; // 980px
 }
 .line-bottom {
   border-bottom: 1px solid $clv-borders;
+}
+
+.flex {
+  display: flex;
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--justify-start {
+    justify-content: flex-start;
+  }
+
+  &--justify-end {
+    justify-content: flex-end;
+  }
+
+  &--justify-center {
+    justify-content: center;
+  }
+
+  &--align-content-center {
+    align-content: center;
+  }
+
+  &--align-content-start {
+    align-content: flex-start;
+  }
+
+  &--align-content-end {
+    align-content: flex-end;
+  }
+  // add the other options as ou need them here
+}
+
+.flex-item {
+  &--align-self-center {
+    align-self: center;
+  }
+  // add the other options as ou need them here
 }
 
 .parent {
