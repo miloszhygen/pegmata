@@ -7,7 +7,7 @@ const Button = styled.button`
   font-family: inherit;
   border: 0;
 
-  border-radius: ${({ theme }) => theme.borderRadius};
+  border-radius: ${({ theme }) => theme.defaults.borderRadius};
   padding: 0.75rem 1.25rem;
 
   ${color}

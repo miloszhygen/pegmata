@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { border } from 'styled-system';
+import { compose, space, layout, flexbox, border, position, shadow } from 'styled-system';
 
-const Button = styled.img`
-  ${border}
+const Image = styled.img`
+  ${compose(space, layout, flexbox, border, position, shadow)}
 `;
 
-export default Button;
+export default Image;

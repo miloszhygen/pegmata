@@ -1,5 +1,6 @@
 import React from 'react';
-import { addParameters } from '@storybook/react';
+import { addParameters, addDecorator } from '@storybook/react';
+import ThemeProvider from '~providers/ThemeProvider';
 
 /**
  * Adding the backgrounds addon to change the iframe/canvas color
@@ -7,3 +8,5 @@ import { addParameters } from '@storybook/react';
 addParameters({
   backgrounds: [{ name: 'lightBeige', value: '#F5F4F0', default: true }],
 });
+
+addDecorator(storyFn => <ThemeProvider>{storyFn()}</ThemeProvider>);

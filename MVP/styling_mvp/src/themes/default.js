@@ -12,8 +12,17 @@ const theme = {
     large: '3em',
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
-  breakpoints: ['40em', '52em', '64em'],
-  borderRadius: '.25rem',
+  breakpoints: {
+    xs: '0',
+    sm: '600px',
+    md: '960px',
+    lg: '1280px',
+    xl: '1920px',
+  },
+  defaults: {
+    borderRadius: '.25rem',
+    columnGap: '.625rem', // This is divided by two. The actual gap with .625 rem will be 1.25rem
+  },
 };
 
 export default theme;
