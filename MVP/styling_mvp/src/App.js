@@ -1,9 +1,9 @@
 import React from 'react';
-import ThemeProvider from '~providers/ThemeProvider';
-import Box from '~components/elements/Box';
-import Button from '~components/base/Button';
-import Section from '~components/base/Section';
-import Columns from '~components/elements/Columns';
+import ThemeProvider from './providers/ThemeProvider';
+import Box from './components/elements/Box';
+import Button from './components/base/Button';
+import Section from './components/base/Section';
+import Columns from './components/elements/Columns';
 
 const App = () => (
   <ThemeProvider>

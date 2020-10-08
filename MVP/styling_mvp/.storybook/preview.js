@@ -1,14 +1,26 @@
 import React from 'react';
 import { addParameters, addDecorator } from '@storybook/react';
-// import ThemeProvider from '~providers/ThemeProvider';
-import { ThemeProvider } from 'styled-components';
-import theme from '../src/themes/default';
+import ThemeProvider from '../src/providers/ThemeProvider';
 
 /**
- * Adding the backgrounds addon to change the iframe/canvas color
+ * Backgrounds addon to change the iframe/canvas color
  * */
-addParameters({
-  backgrounds: [{ name: 'lightBeige', value: '#F5F4F0', default: true }],
-});
 
-addDecorator(storyFn => <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>);
+export const parameters = {
+  backgrounds: {
+    default: 'lightBeige',
+    values: [
+      { name: 'red', value: '#f00' },
+      { name: 'green', value: '#0f0' },
+      { name: 'lightBeige', value: '#F5F4F0' },
+    ],
+  },
+};
+
+export const decorators = [
+  Story => (
+    <ThemeProvider>
+      <Story />
+    </ThemeProvider>
+  ),
+];

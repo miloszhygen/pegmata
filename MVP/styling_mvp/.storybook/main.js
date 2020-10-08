@@ -1,10 +1,9 @@
 module.exports = {
-  stories: ['../src/components/**/*.stories.js'],
+  stories: ['../src/**/*.stories.js'],
   addons: [
+    // the addon-essentials is zero config and covers a lot, install separately for better control
     '@storybook/preset-create-react-app',
-    '@storybook/addon-actions',
+    '@storybook/addon-essentials',
     '@storybook/addon-links',
-    '@storybook/addon-viewport/register',
-    '@storybook/addon-backgrounds/register',
   ],
 };

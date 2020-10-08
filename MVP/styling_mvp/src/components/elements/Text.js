@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import styled, { css } from 'styled-components';
 import { compose, space, color, typography } from 'styled-system';
 
 const truncateStyles = css`
@@ -18,6 +19,8 @@ const Text = styled.p`
   ${compose(space, color, typography)}
 `;
 
-Text.propTypes;
+Text.propTypes = {
+  truncate: PropTypes.bool,
+};
 
 export default Text;
