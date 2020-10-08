@@ -1,5 +1,5 @@
 import React from 'react';
-import Columns from '.';
+import Columns from './index';
 
 export default {
   title: 'Elements|Columns',
@@ -7,7 +7,9 @@ export default {
 };
 
 const Placeholder = (
-  <span style={{ width: '100%', height: '100%', background: 'blue', borderRadius: '.25rem' }} />
+  <span style={{ width: '100%', height: '100%', background: 'blue', borderRadius: '.25rem' }}>
+    blah
+  </span>
 );
 
 export const regular = () => (

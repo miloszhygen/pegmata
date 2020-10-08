@@ -7,7 +7,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public --ci",
+    "storybook": "start-storybook -p 9009 -s [public, src/themes] --ci",
     "build-storybook": "build-storybook -s public",
     "postinstall": "link-module-alias"
   },
@@ -50,7 +50,7 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5"
   },

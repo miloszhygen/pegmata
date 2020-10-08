@@ -1,3 +1,14 @@
+# Styling MVP
+
+This is a project to test out different styling methods for a react project. 
+First round there will be a SASS and a styled-components implementation.
+
+## SASS
+
+## Styled-components
+
+
+-----------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
