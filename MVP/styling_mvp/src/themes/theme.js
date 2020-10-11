@@ -25,6 +25,23 @@ export default {
 };
 */
 
+// TODO: usikker på hvor disse bør ligge
+export const fontNames = {
+  regular: 'IBMPlexSansRegular',
+  bold: 'WorkSansExtraBold',
+  mono: 'IBMPlexMono',
+};
+
+const palette = {
+  grey: '#e5e5e5',
+  black: '#161616',
+  orange: '#e56c41',
+  yellow: '#fcc135',
+  white: '#ffffff',
+  blue: '#315784',
+  red: '#e55441',
+};
+
 // the 'heading' key used here is pointing to the 'heading' option under fontWeights block under the base object
 const heading = {
   color: 'text',
@@ -36,12 +53,11 @@ const heading = {
 export const base = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
-    body:
-      'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    body: `${fontNames.regular}}, sans-serif`,
     heading: 'inherit',
-    monospace: 'Menlo, monospace',
+    monospace: `${fontNames.mono}}, sans-serif`,
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96], // sass version: [13, 18, 24, 36, 60, 90]
   fontWeights: {
     body: 400,
     heading: 700,
@@ -52,11 +68,16 @@ export const base = {
     heading: 1.125,
   },
   colors: {
-    text: '#000',
-    background: '#fff',
-    primary: '#07c',
-    secondary: '#30c',
+    text: palette.black,
+    textSecondary: palette.white,
+    background: palette.grey,
+    primary: palette.yellow,
+    secondary: palette.orange,
     muted: '#f6f6f6',
+    warning: palette.red,
+    border: palette.black,
+    link: palette.orange,
+    focus: palette.blue,
   },
   styles: {
     // the stuff inside root gets applied to the body element

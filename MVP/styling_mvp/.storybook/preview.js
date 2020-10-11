@@ -1,5 +1,6 @@
 import React from 'react';
 import { addParameters, addDecorator } from '@storybook/react';
+import GlobalStyles from '../src/GlobalStyles';
 import ThemeProvider from '../src/providers/ThemeProvider';
 // https://github.com/system-ui/theme-ui/issues/539
 /**
@@ -19,8 +20,11 @@ export const parameters = {
 
 export const decorators = [
   Story => (
-    <ThemeProvider>
-      <Story />
-    </ThemeProvider>
+    <>
+      <GlobalStyles />
+      <ThemeProvider>
+        <Story />
+      </ThemeProvider>
+    </>
   ),
 ];
