@@ -1,9 +1,10 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { color } from 'styled-system';
+/*
 
 const Button = styled.button`
-  /* reset */
+  /!* reset *!/
   font-size: 100%;
   font-family: inherit;
   border: 0;
@@ -13,7 +14,21 @@ const Button = styled.button`
 
   ${color}
 `;
+*/
 
+const Button = ({ children }) => (
+  <button
+    sx={{
+      fontSize: '100%',
+      fontFamily: 'inherit',
+      border: '0',
+      borderRadius: 0,
+      padding: '0.75rem 1.25rem',
+    }}
+  >
+    {children}
+  </button>
+);
 Button.defaultProps = {
   disabled: false,
   type: 'secondary',
