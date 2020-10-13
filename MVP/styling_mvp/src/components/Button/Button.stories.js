@@ -3,7 +3,7 @@ import Button from './Button';
 
 // This default export determines where your story goes in the story list
 export default {
-  title: 'Base/Button',
+  title: 'Components/Button',
   component: Button,
 };
 
@@ -17,8 +17,9 @@ Primary.args = {
   children: 'basic',
 };
 
-export const Link = Template.bind({});
-Link.args = {
-  type: 'primary',
-  children: <a href="https://www.ap.no">Aftenposten</a>,
+// Each story then reuses that template
+export const Secondary = Template.bind({});
+Secondary.args = {
+  type: 'secondary',
+  children: 'basic',
 };

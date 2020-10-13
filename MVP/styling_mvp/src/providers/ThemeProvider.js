@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider as Provider } from 'theme-ui';
 
-import theme from '../themes/theme';
+import base from '../themes/theme';
 
-const ThemeProvider = ({ children }) => <Provider theme={theme}>{children}</Provider>;
+const ThemeProvider = ({ children }) => <Provider theme={base}>{children}</Provider>;
 
 export default ThemeProvider;
