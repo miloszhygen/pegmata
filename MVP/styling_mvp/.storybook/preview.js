@@ -1,6 +1,7 @@
 import React from 'react';
 import { addParameters, addDecorator } from '@storybook/react';
 import ThemeProvider from '../src/providers/ThemeProvider';
+import GlobalStyle from '../src/GlobalStyle';
 
 /**
  * Backgrounds addon to change the iframe/canvas color
@@ -20,6 +21,7 @@ export const parameters = {
 export const decorators = [
   Story => (
     <ThemeProvider>
+      <GlobalStyle />
       <Story />
     </ThemeProvider>
   ),

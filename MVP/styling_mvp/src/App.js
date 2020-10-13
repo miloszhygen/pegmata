@@ -1,17 +1,20 @@
 import React from 'react';
 import ThemeProvider from './providers/ThemeProvider';
-import Box from './components/elements/Box';
-import Button from './components/base/Button';
-import Section from './components/base/Section';
-import Columns from './components/elements/Columns';
+import GlobalStyle from './GlobalStyle';
+import Box from './components/Box';
+import Button from './components/Button/Button';
+import Section from './components/Section';
+import Columns from './components/Columns';
 
 const App = () => (
   <ThemeProvider>
+    <GlobalStyle />
     <Section>
       <Box>
         <Box.Content>
           <Columns>
             <Columns.Column size={{ xs: 10, sm: 5, md: 2 }}>
+              <h1>This is a heading</h1>
               <Button>hey</Button>
             </Columns.Column>
             <Columns.Column size="2">

@@ -4,8 +4,10 @@ import { color } from 'styled-system';
 
 const Button = styled.button`
   /* reset */
-  font-size: 100%;
   font-family: inherit;
+  font-size: 100%;
+  line-height: ${({ theme }) => theme.lineHeights.controls};
+  margin: 0;
   border: 0;
 
   border-radius: ${({ theme }) => theme.defaults.borderRadius};
