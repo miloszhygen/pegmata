@@ -1,9 +1,7 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { compose, space, layout, background } from 'styled-system';
 
 const Section = styled.section`
-  padding: 1.25rem;
-
   ${compose(space, layout, background)}
 `;
 

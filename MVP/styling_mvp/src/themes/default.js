@@ -31,7 +31,7 @@ const theme = {
     heading: `${bold}, sans-serif`,
     monospace: `${mono}, sans-serif`,
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96], // sass version: [13, 18, 24, 36, 60, 90]
+  fontSizes: ['12px', '14px', '16px', '20px', '24px', '32px', '48px', '64px', '96px'], // sass version: [13, 18, 24, 36, 60, 90]
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fontWeights: {
     body: 400,

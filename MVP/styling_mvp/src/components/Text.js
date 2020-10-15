@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 import { compose, space, color, typography } from 'styled-system';
 
+// to get theme-aware css; use the styled-system one
 const truncateStyles = css`
   white-space: nowrap;
   overflow: hidden;
