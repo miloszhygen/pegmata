@@ -27,9 +27,9 @@ const theme = {
     focus: palette.blue,
   },
   fonts: {
-    body: `${regular}}, sans-serif`,
-    heading: `${bold}}, sans-serif`,
-    monospace: `${mono}}, sans-serif`,
+    body: `${regular}, sans-serif`,
+    heading: `${bold}, sans-serif`,
+    monospace: `${mono}, sans-serif`,
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96], // sass version: [13, 18, 24, 36, 60, 90]
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
@@ -43,13 +43,7 @@ const theme = {
     heading: 1.25,
     controls: 1.15,
   },
-  breakpoints: {
-    xs: '0',
-    sm: '600px',
-    md: '960px',
-    lg: '1280px',
-    xl: '1920px',
-  },
+  breakpoints: ['0px', '600px', '960px', '1280px', '1920px'],
   defaults: {
     borderRadius: '.25rem',
     columnGap: '.625rem', // This is divided by two. The actual gap with .625 rem will be 1.25rem

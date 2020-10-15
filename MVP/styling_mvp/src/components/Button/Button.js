@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import propTypes from '@styled-system/prop-types';
 import styled from 'styled-components';
 import { color } from 'styled-system';
 
@@ -25,5 +26,6 @@ Button.propTypes = {
   type: PropTypes.oneOf(['primary', 'secondary']),
   disabled: PropTypes.bool,
   children: PropTypes.node,
+  ...propTypes.color,
 };
 export default Button;
