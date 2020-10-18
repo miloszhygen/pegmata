@@ -36,12 +36,6 @@ export default {
   },
 };
 export const styles = {
-  p: {
-    color: 'text',
-    fontFamily: 'body',
-    fontWeight: 'body',
-    lineHeight: 'body',
-  },
   a: {
     color: 'link',
   },

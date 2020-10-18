@@ -5,8 +5,8 @@ import Box from './components/Box';
 import Button from './components/Button';
 import Section from './components/Section';
 import Columns from './components/Columns';
-import Text from './components/Text';
 import Header from './components/Header';
+import Text from './components/Text';
 
 const App = () => (
   <ThemeProvider>
@@ -16,7 +16,6 @@ const App = () => (
       <Box p={2}>
         <Columns>
           <Columns.Column size={{ xs: 10, sm: 5, md: 2 }}>
-            <h1>This is a heading</h1>
             <Button>hey</Button>
           </Columns.Column>
           <Columns.Column size="2">
