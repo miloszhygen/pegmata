@@ -7,11 +7,31 @@ import Section from './components/Section';
 import Columns from './components/Columns';
 import Header from './components/Header';
 import Text from './components/Text';
+import Image from './components/Image';
+
+import mainImage from './assets/images/mainImage.png';
+import mainImageLarge from './assets/images/mainImageLarge.png';
 
 const App = () => (
   <ThemeProvider>
     <GlobalStyle />
     <Header />
+    <Box mx="auto" my="0" p={[2, 2, 2, 4, 5]}>
+      <Image
+        src={mainImage}
+        width={1}
+        objectFit="contain"
+        display={['block', 'block', 'none', 'none', 'none']}
+        alt="Mom pulling sled"
+      />
+      <Image
+        src={mainImageLarge}
+        width={1}
+        objectFit="contain"
+        display={['none', 'none', 'block', 'block', 'block']}
+        alt="Mom pulling sled"
+      />
+    </Box>
     <Section>
       <Box p={2}>
         <Columns>
