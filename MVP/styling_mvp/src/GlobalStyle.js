@@ -44,6 +44,7 @@ const GlobalStyle = createGlobalStyle`
       'fonts.monospace',
     )} source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    font-size: inherit;
 }
 `;
 

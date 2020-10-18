@@ -1,14 +1,14 @@
 import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
 import propTypes from '@styled-system/prop-types';
-import { color } from 'styled-system';
+import { color, space, layout, compose } from 'styled-system';
 
 const Button = styled.button`
   line-height: ${({ theme }) => theme.lineHeights.controls};
   border-radius: ${({ theme }) => theme.defaults.borderRadius};
   padding: 0.75rem 1.25rem;
 
-  ${color}
+  ${compose(color, space, layout)}
 `;
 
 Button.defaultProps = {

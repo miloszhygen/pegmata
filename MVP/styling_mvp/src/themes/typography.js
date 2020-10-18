@@ -1,20 +1,11 @@
+// NB!!!! This is not in use in this project yet! Only using the default theme for now!
+// Long term they will be separated out in separate files
+
 // Also used in GlobalStyles
 export const fontNames = {
   regular: 'IBMPlexSansRegular',
   bold: 'WorkSansExtraBold',
   mono: 'IBMPlexMono',
-};
-
-// the 'heading' key used here is pointing to the 'heading' option under fontWeights block under the base object
-const heading = {
-  // resets //
-  margin: 0,
-  hyphens: 'auto',
-  color: 'text',
-  // resets end //
-  fontFamily: 'heading',
-  lineHeight: 'heading',
-  fontWeight: 'heading',
 };
 
 export default {
@@ -42,46 +33,9 @@ export default {
     noUnderline: {
       textDecoration: 'none',
     },
-    heading: {
-      // resets //
-      margin: 0,
-      hyphens: 'auto',
-      color: 'text',
-      // resets end //
-      fontFamily: 'heading',
-      lineHeight: 'heading',
-      fontWeight: 'heading',
-    },
   },
 };
 export const styles = {
-  h1: {
-    ...heading,
-    fontSize: [6, 7, 8],
-    fontWeight: 'bold',
-  },
-  h2: {
-    ...heading,
-    fontSize: 6,
-  },
-  h3: {
-    ...heading,
-    fontFamily: 'body',
-    fontSize: 5,
-  },
-  h4: {
-    ...heading,
-    fontFamily: 'body',
-    fontSize: 4,
-  },
-  h5: {
-    ...heading,
-    fontSize: 2,
-  },
-  h6: {
-    ...heading,
-    fontSize: 1,
-  },
   p: {
     color: 'text',
     fontFamily: 'body',
@@ -97,10 +51,6 @@ export const styles = {
     code: {
       color: 'inherit',
     },
-  },
-  code: {
-    fontFamily: "source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace",
-    fontSize: 'inherit',
   },
   table: {
     width: '100%',

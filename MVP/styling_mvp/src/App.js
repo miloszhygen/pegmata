@@ -6,10 +6,12 @@ import Button from './components/Button';
 import Section from './components/Section';
 import Columns from './components/Columns';
 import Text from './components/Text';
+import Header from './components/Header';
 
 const App = () => (
   <ThemeProvider>
     <GlobalStyle />
+    <Header />
     <Section>
       <Box p={2}>
         <Columns>

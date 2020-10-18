@@ -25,6 +25,11 @@ const theme = {
     border: palette.black,
     link: palette.orange,
     focus: palette.blue,
+    modes: {
+      yellow: {
+        // for when we make the yellow theme
+      },
+    },
   },
   fonts: {
     body: `${regular}, sans-serif`,
