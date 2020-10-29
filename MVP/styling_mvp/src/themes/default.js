@@ -26,6 +26,10 @@ const theme = {
     link: palette.black,
     hover: palette.orange,
     focus: palette.blue,
+    buttons: {
+      primary: palette.yellow,
+      secondary: palette.white,
+    },
     modes: {
       yellow: {
         // for when we make the yellow theme
@@ -45,9 +49,13 @@ const theme = {
     bold: 800,
   },
   lineHeights: {
+    list: 2.5,
     body: 1.5,
     heading: 1.25,
     controls: 1.15,
+  },
+  radii: {
+    button: '32px',
   },
   breakpoints: ['0px', '600px', '960px', '1280px', '1920px'],
   defaults: {

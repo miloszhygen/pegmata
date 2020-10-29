@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import propTypes from '@styled-system/prop-types';
 import { color, space, layout, compose } from 'styled-system';
 
+// TODO: getTheme
 const Button = styled.button`
   line-height: ${({ theme }) => theme.lineHeights.controls};
   border-radius: ${({ theme }) => theme.defaults.borderRadius};

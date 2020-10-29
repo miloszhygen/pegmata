@@ -1,65 +1,47 @@
 import React from 'react';
 import Link from './Link';
+import arrowLeftSrc from '../../assets/icons/arrow-left.svg';
 
 export default {
   title: 'Link',
   component: Link,
 };
 
+const LinkTemplate = args => <Link {...args} />;
+const LinkArrowTemplate = ({ listUnderline, secondary = false, height, ...rest }) => (
+  <Link.LinkWrapper listUnderline={listUnderline} secondary={secondary}>
+    <Link.LinkArrow src={arrowLeftSrc} alt="arrow-left" height={height} />
+    <Link secondary={secondary} {...rest} />
+  </Link.LinkWrapper>
+);
+const LinkButtonTemplate = args => <Link.LinkButton {...args} />;
 
-const Template = args => <Link {...args} />;
-
-export const Standard = Template.bind({});
-Standard.args = {
-  text: 'slik virker det'
+export const PlainLink = LinkTemplate.bind({});
+PlainLink.args = {
+  text: 'slik virker det',
+  href: '#',
 };
-/*
 
-export const arrowRight = () => (
-  <Link href="#" arrow>
-    Slik virker det
-  </Link>
-);
+export const ArrowLink = LinkArrowTemplate.bind({});
+ArrowLink.args = {
+  listUnderline: true,
+  noUnderline: true,
+  text: 'slik virker det',
+  lineHeight: 'list',
+  href: '#',
+  fontSize: [16, 16, 24, 24, 24],
+  height: [16, 16, 24, 24, 24],
+};
 
-export const arrowLeft = () => (
-  <Link href="#" arrowLeft>
-    Slik virker det
-  </Link>
-);
+export const LinkButton = LinkButtonTemplate.bind({});
+LinkButton.args = {
+  children: 'slik virker det',
+  href: '#',
+};
 
-export const noUnderline = () => (
-  <Link href="#" noUnderline>
-    Slik virker det
-  </Link>
-);
-
-export const secondary = () => (
-  <Link href="#" secondary>
-    Slik virker det
-  </Link>
-);
-
-export const small = () => (
-  <Link href="#" small>
-    Slik virker det
-  </Link>
-);
-
-export const medium = () => (
-  <Link href="#" medium>
-    Slik virker det
-  </Link>
-);
-
-export const button = () => (
-  <Link href="#" button>
-    Slik virker det
-  </Link>
-);
-
-export const buttonSecondary = () => (
-  <Link href="#" buttonSecondary>
-    Logg inn
-  </Link>
-);
-*/
+export const LinkButtonSecondary = LinkButtonTemplate.bind({});
+LinkButtonSecondary.args = {
+  children: 'slik virker det',
+  href: '#',
+  secondary: true,
+};
