@@ -10,7 +10,7 @@ const Header = ({ bg }) => (
     flexDirection="row"
     justifyContent="space-between"
     alignItems="center"
-    px={[3, 4, 5, 6, 6]}
+    px={[2, 3, 0, 0, 0]}
     bg={bg}
   >
     <H1>Spark.</H1>

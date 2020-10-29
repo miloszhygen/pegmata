@@ -23,7 +23,8 @@ const theme = {
     highlight: palette.orange,
     warning: palette.red,
     border: palette.black,
-    link: palette.orange,
+    link: palette.black,
+    hover: palette.orange,
     focus: palette.blue,
     modes: {
       yellow: {

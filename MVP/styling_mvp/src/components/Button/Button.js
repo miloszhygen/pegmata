@@ -7,6 +7,7 @@ const Button = styled.button`
   line-height: ${({ theme }) => theme.lineHeights.controls};
   border-radius: ${({ theme }) => theme.defaults.borderRadius};
   padding: 0.75rem 1.25rem;
+  text-rendering: optimizeLegibility;
 
   ${compose(color, space, layout)}
 `;

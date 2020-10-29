@@ -17,8 +17,8 @@ Primary.args = {
   children: 'basic',
 };
 
-export const Link = Template.bind({});
-Link.args = {
+export const ButtonLink = Template.bind({});
+ButtonLink.args = {
   type: 'primary',
   children: <a href="https://www.ap.no">Aftenposten</a>,
 };

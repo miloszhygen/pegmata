@@ -21,5 +21,9 @@ Standard.args = {
   truncate: false,
   color: 'text',
   children:
-    "Often when working on responsive layouts, it's useful to adjust styles along a singular dimension – such as font-size, margin, padding, and width. Instead of manually managing media queries and adding nested style objects throughout a code base, Styled System offers a convenient shorthand syntax for adding responsive styles with a mobile-first approach. While this syntax can seem odd at first, it can become a powerful way to manage responsive typography and layouts.",
+    "Often when working on responsive layouts, it's useful to adjust styles along a singular " +
+    "dimension – such as font-size, margin, padding, and width. Instead of manually managing media queries " +
+    "and adding nested style objects throughout a code base, Styled System offers a convenient shorthand syntax " +
+    "for adding responsive styles with a mobile-first approach. While this syntax can seem odd at first, " +
+    "it can become a powerful way to manage responsive typography and layouts.",
 };
