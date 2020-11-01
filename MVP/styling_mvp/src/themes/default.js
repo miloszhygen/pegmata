@@ -57,6 +57,9 @@ const theme = {
   radii: {
     button: '32px',
   },
+  borders: {
+    button: '2px solid transparent',
+  },
   breakpoints: ['0px', '600px', '960px', '1280px', '1920px'],
   defaults: {
     borderRadius: '.25rem',

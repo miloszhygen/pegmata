@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Box from '../Box';
 import Button from '../Button';
 import { H1 } from '../Heading';
+import { LinkButton } from '../Link';
 
 const Header = ({ bg }) => (
   <Box
@@ -15,12 +16,12 @@ const Header = ({ bg }) => (
   >
     <H1>Spark.</H1>
     <div>
-      <Button
-        mr={[1, 1, 2, 2, 3]}
+      <LinkButton
         display={['none', 'none', 'inline-block', 'inline-block', 'inline-block']}
+        mr={[1, 1, 2, 2, 3]}
       >
         Logg inn
-      </Button>
+      </LinkButton>
       <Button>menu</Button>
     </div>
   </Box>

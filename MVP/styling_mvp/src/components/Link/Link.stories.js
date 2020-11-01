@@ -1,6 +1,5 @@
 import React from 'react';
-import Link from './Link';
-import arrowLeftSrc from '../../assets/icons/arrow-left.svg';
+import Link, { LinkButton } from './index';
 
 export default {
   title: 'Link',
@@ -10,11 +9,11 @@ export default {
 const LinkTemplate = args => <Link {...args} />;
 const LinkArrowTemplate = ({ listUnderline, secondary = false, height, ...rest }) => (
   <Link.LinkWrapper listUnderline={listUnderline} secondary={secondary}>
-    <Link.LinkArrow src={arrowLeftSrc} alt="arrow-left" height={height} />
+    <Link.LinkArrow left height={height} />
     <Link secondary={secondary} {...rest} />
   </Link.LinkWrapper>
 );
-const LinkButtonTemplate = args => <Link.LinkButton {...args} />;
+const LinkButtonTemplate = args => <LinkButton {...args} />;
 
 export const PlainLink = LinkTemplate.bind({});
 PlainLink.args = {
@@ -33,9 +32,9 @@ ArrowLink.args = {
   height: [16, 16, 24, 24, 24],
 };
 
-export const LinkButton = LinkButtonTemplate.bind({});
-LinkButton.args = {
-  children: 'slik virker det',
+export const LinkButtonPrimary = LinkButtonTemplate.bind({});
+LinkButtonPrimary.args = {
+  text: 'slik virker det',
   href: '#',
 };
 
