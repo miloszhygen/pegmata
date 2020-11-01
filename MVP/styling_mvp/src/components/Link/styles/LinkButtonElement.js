@@ -15,6 +15,14 @@ const LinkButtonElement = styled.a`
   cursor: pointer;
   text-decoration: none;
 
+  &:visited,
+  &:active {
+    background-color: ${({ secondary }) =>
+      themeGet(secondary ? 'colors.buttons.secondary' : 'colors.buttons.primary')};
+  }
+  &:hover {
+    background-color: ${themeGet('colors.hover')};
+  }
   ${compose(space, layout)};
 `;
 

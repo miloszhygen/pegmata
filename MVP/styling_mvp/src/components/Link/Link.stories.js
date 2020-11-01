@@ -10,10 +10,17 @@ const LinkTemplate = args => <Link {...args} />;
 
 const LinkButtonTemplate = args => <LinkButton {...args} />;
 
-export const PlainLink = LinkTemplate.bind({});
-PlainLink.args = {
+export const StandardLink = LinkTemplate.bind({});
+StandardLink.args = {
   text: 'slik virker det',
   href: '#',
+};
+
+export const SecondaryLink = LinkTemplate.bind({});
+SecondaryLink.args = {
+  text: 'slik virker det',
+  href: '#',
+  secondary: true,
 };
 
 export const LinkButtonPrimary = LinkButtonTemplate.bind({});
