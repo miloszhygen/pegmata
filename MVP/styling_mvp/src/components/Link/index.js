@@ -1,8 +1,8 @@
 import React from 'react';
 import LinkElement from './styles/LinkElement';
-import LinkWrapper from './styles/LinkWrapper';
+import LinkWrapper from '../LinkList/styles/LinkWrapper';
 import LinkButtonElement from './styles/LinkButtonElement';
-import LinkArrow from './styles/LinkArrow';
+import LinkArrow from '../LinkList/styles/LinkArrow';
 
 const truncateString = (str, num) => (str.length <= num ? str : str.slice(0, num) + '...');
 
