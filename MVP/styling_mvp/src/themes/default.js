@@ -60,7 +60,7 @@ const theme = {
   borders: {
     button: '2px solid transparent',
   },
-  breakpoints: ['0px', '600px', '960px', '1280px', '1920px'],
+  breakpoints: ['600px', '960px', '1280px', '1920px'],
   defaults: {
     borderRadius: '.25rem',
     columnGap: '.625rem', // This is divided by two. The actual gap with .625 rem will be 1.25rem
