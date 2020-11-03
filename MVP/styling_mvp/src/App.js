@@ -80,25 +80,30 @@ const App = () => (
               comfort. Products that work well, feel great, and do good while they&#39;re at it.
             </Text>
             <Box display="flex" flexDirection="row" flexWrap="wrap">
-              <Box display="flex" flexDirection="row" flex="1 1 50%">
+              <Box display="flex" flexDirection="row" flex="1 1 50%" alignItems="center">
                 <Icon mr={[2, 2, 3, 4]} src={satisfied} />
                 <Text mr={[2, 3, 3, 4]}>Tekst på to linjer her</Text>
               </Box>
-              <Box display="flex" flexDirection="row" flex="1 1 50%">
+              <Box display="flex" flexDirection="row" flex="1 1 50%" alignItems="center">
                 <Icon mr={[2, 2, 3, 4]} src={snow} />
                 <Text>Tekst på to linjer her</Text>
               </Box>
-              <Box display="flex" flexDirection="row" flex="1 1 50%">
+              <Box display="flex" flexDirection="row" flex="1 1 50%" alignItems="center">
                 <Icon mr={[2, 2, 3, 4]} src={dog} />
                 <Text mr={[2, 3, 3, 4]}>Tekst på to linjer her</Text>
               </Box>
-              <Box display="flex" flexDirection="row" flex="1 1 50%">
+              <Box display="flex" flexDirection="row" flex="1 1 50%" alignItems="center">
                 <Icon mr={[2, 2, 3, 4]} src={skiing} />
                 <Text>Tekst på to linjer her</Text>
               </Box>
             </Box>
           </Box>
         </Section>
+        <footer>
+          <Box mt={[5, 6]} pt={[4, 4]} borderTop="footer">
+            Footer
+          </Box>
+        </footer>
       </Box>
     </Box>
   </ThemeProvider>

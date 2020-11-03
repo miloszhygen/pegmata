@@ -59,6 +59,7 @@ const theme = {
   },
   borders: {
     button: '2px solid transparent',
+    footer: '2px solid',
   },
   breakpoints: ['600px', '960px', '1280px', '1920px'],
   defaults: {
