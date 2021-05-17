@@ -37,12 +37,12 @@ const H2 = ({ children, ...rest }) => (
   </Heading>
 );
 const H3 = ({ children, ...rest }) => (
-  <Heading as="h3" fontSize={[3, 4, 4, 5, 5]} fontFamily="body" {...rest}>
+  <Heading as="h3" fontSize={[4, 4, 5, 5]} fontFamily="body" {...rest}>
     {children}
   </Heading>
 );
 const H4 = ({ children, ...rest }) => (
-  <Heading as="h4" fontSize={[2, 2, 3, 3, 4]} fontFamily="body" {...rest}>
+  <Heading as="h4" fontSize={[2, 3, 3, 4]} fontFamily="body" {...rest}>
     {children}
   </Heading>
 );
